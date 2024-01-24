@@ -50,14 +50,6 @@ The exporter must be executed by the same instance of Docker that it is monitori
 
 If you enable the experimental features mode in Docker, [it does expose some very basic metrics on the Docker engine](https://docs.docker.com/config/thirdparty/prometheus/). However, those metrics form a minimal set that is not very informative in real world use cases.
 
-# Version upgrades
-
-To upgrade to a new version:
-
-1. Execute `docekr rm --force docker_exporter` to stop the existing instance.
-1. Execute `docker pull prometheusnet/docker_exporter` to download the new version.
-1. Execute the `docker run` command from the quick start to start the new version.
-
 # Troubleshooting
 
 Error messages can typically be found in `docker logs docker_exporter`.
